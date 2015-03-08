@@ -16,6 +16,10 @@
     margin-top: 20px;
 }
 
+.wp-caption-text {
+    text-align: center;
+}
+
 ul.archive li {
     list-style-type: none;
 }
