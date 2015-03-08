@@ -20,6 +20,10 @@
     text-align: center;
 }
 
+ul {
+    list-style: inside none square;
+}
+
 ul.archive li {
     list-style-type: none;
 }
