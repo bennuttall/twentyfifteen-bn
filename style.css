@@ -11,3 +11,11 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twentyfifteen-bn
 */
+
+ul.archive li {
+    list-style-type: none;
+}
+
+ul.archive li ul li ul li {
+    list-style-type: square;
+}
