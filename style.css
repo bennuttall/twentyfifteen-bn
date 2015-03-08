@@ -31,6 +31,34 @@ ul {
     list-style: inside none square;
 }
 
+/* Front page */
+
+.me-elsewhere ul.grid li {
+    width: 25%;
+    display: block;
+    float: left;
+    list-style-type: none;
+    text-indent: -9999px;
+}
+
+.me-elsewhere ul.grid li.rpi {
+    background: url('images/raspberry-pi.png');
+}
+
+.me-elsewhere ul.grid li.github {
+    background: url('images/github.png');
+}
+
+.me-elsewhere ul.grid li.twitter {
+    background: url('images/twitter.png');
+}
+
+.me-elsewhere ul.grid li.flickr {
+    background: url('images/flickr.png');
+}
+
+/* Archive */
+
 ul.archive li {
     list-style-type: none;
 }
