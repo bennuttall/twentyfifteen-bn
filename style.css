@@ -12,6 +12,10 @@
  Text Domain:  twentyfifteen-bn
 */
 
+.profile-picture {
+    margin-top: 20px;
+}
+
 ul.archive li {
     list-style-type: none;
 }
@@ -19,3 +23,4 @@ ul.archive li {
 ul.archive li ul li ul li {
     list-style-type: square;
 }
+
