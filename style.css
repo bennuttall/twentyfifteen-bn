@@ -72,6 +72,25 @@ ul {
     border-bottom: 0;
 }
 
+.latest-posts .post {
+    min-height: 200px;
+    margin-bottom: 50px;
+}
+
+.latest-posts .post .featured-image {
+    width: 200px;
+    float: left;
+}
+
+.latest-posts .post .post-excerpt {
+    width: 460px;
+    float: left;
+}
+
+.latest-posts .more {
+    text-align: right;
+}
+
 /* Archive */
 
 ul.archive li {

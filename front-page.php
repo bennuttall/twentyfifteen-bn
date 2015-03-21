@@ -23,6 +23,14 @@
                             <li class="flickr"><a href="http://www.flickr.com/photos/ben_nuttall/">Flickr</a></li>
                         </ul>
                     </div>
+
+                    <div class="latest-posts">
+                        <h2>Latest blog posts</h2>
+
+                        <?php get_template_part('part', 'blog-latest'); ?>
+
+                        <p class="more"><a href="/blog/">See more</a></p>
+                    </div>
                 </div>
 
                 <?php edit_post_link(__('Edit', 'twentyfifteen'), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->'); ?>
