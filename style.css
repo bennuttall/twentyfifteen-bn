@@ -34,7 +34,7 @@ ul {
 /* Front page */
 
 .me-elsewhere ul.grid {
-    width: 640px;
+    max-width: 640px;
     height: 150px;
     margin: 0 auto;
 }
@@ -78,16 +78,18 @@ ul {
 }
 
 .latest-posts .post .featured-image {
-    width: 200px;
+    max-width: 200px;
     float: left;
+    margin-right: 50px;
 }
 
 .latest-posts .post .post-excerpt {
-    width: 460px;
+    max-width: 460px;
     float: left;
 }
 
 .latest-posts .more {
+    clear: both;
     text-align: right;
 }
 
@@ -101,3 +103,8 @@ ul.archive li ul li ul li {
     list-style-type: square;
 }
 
+/* Responsive */
+
+@media screen and (max-width: 1250px) {
+
+}
