@@ -19,7 +19,7 @@
                         <ul class="grid">
                             <li class="rpi"><a href="http://www.raspberrypi.org/">Raspberry Pi</a></li>
                             <li class="github"><a href="https://github.com/bennuttall">GitHub</a></li>
-                            <li class="twitter"><a href="https://twitter.com/">Twitter</a></li>
+                            <li class="twitter"><a href="https://twitter.com/ben_nuttall">Twitter</a></li>
                             <li class="flickr"><a href="http://www.flickr.com/photos/ben_nuttall/">Flickr</a></li>
                         </ul>
                     </div>
