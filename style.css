@@ -103,6 +103,52 @@ ul.archive li ul li ul li {
     list-style-type: square;
 }
 
+/* Talks */
+
+ul.talks li {
+    height: 180px;
+    clear: left;
+    list-style-type: none;
+}
+
+ul.talks li .slide {
+    width: 300px;
+    margin-right: 10px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+}
+
+ul.talks li .slide img, ul.talks li .slide .no-image {
+    height: 167px;
+}
+
+ul.talks li .slide .no-image {
+    padding: 40px 80px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+ul.talks li .info {
+    width: 350px;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+ul.talks li .info h4 {
+    height: 40px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: italic;
+}
+
+ul.talks li .info .details {
+    height: 100px;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1250px) {

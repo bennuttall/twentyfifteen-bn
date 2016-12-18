@@ -17,7 +17,7 @@
 
                     <div class="me-elsewhere">
                         <ul class="grid">
-                            <li class="rpi"><a href="http://www.raspberrypi.org/">Raspberry Pi</a></li>
+                            <li class="rpi"><a href="https://www.raspberrypi.org/">Raspberry Pi</a></li>
                             <li class="github"><a href="https://github.com/bennuttall">GitHub</a></li>
                             <li class="twitter"><a href="https://twitter.com/ben_nuttall">Twitter</a></li>
                             <li class="flickr"><a href="http://www.flickr.com/photos/ben_nuttall/">Flickr</a></li>
@@ -27,9 +27,58 @@
                     <div class="latest-posts">
                         <h2>Latest blog posts</h2>
 
-                        <?php get_template_part('part', 'blog-latest'); ?>
+                        <?php
+
+                        $args = array(
+                            'posts_per_page' => 4,
+                        );
+
+                        $latest = new WP_Query($args);
+
+                        while ($latest->have_posts()): $latest->the_post(); ?>
+
+                            <div class="post">
+                                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+
+                                <div class="featured-image">
+                                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+                                </div>
+
+                                <div class="post-excerpt">
+                                    <?php the_excerpt(); ?>
+                                </div>
+                            </div>
+
+                        <?php endwhile; wp_reset_postdata(); ?>
 
                         <p class="more"><a href="/blog/">See more</a></p>
+                    </div>
+
+                    <div class="latest-other">
+
+                        <h2>Latest from the Raspberry Pi blog</h2>
+
+                        <?php $raspberrypi = get_field('raspberrypi_posts'); ?>
+
+                        <ul>
+                        <?php foreach ($raspberrypi as $post): ?>
+                            <li><a href="<?php echo $post['url']; ?>"><?php echo $post['title']; ?></a></li>
+                        <?php endforeach; ?>
+                        </ul>
+
+                        <p class="more"><a href="https://www.raspberrypi.org/blog/author/bennuttall/">See more</a></p>
+
+                        <h2>Latest from opensource.com</h2>
+
+                        <?php $opensource = get_field('opensource_posts'); ?>
+
+                        <ul>
+                        <?php foreach ($opensource as $post): ?>
+                            <li><a href="<?php echo $post['url']; ?>"><?php echo $post['title']; ?></a></li>
+                        <?php endforeach; ?>
+                        </ul>
+
+                        <p class="more"><a href="https://opensource.com/users/bennuttall">See more</a></p>
                     </div>
                 </div>
 
