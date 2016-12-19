@@ -88,7 +88,7 @@ ul {
     float: left;
 }
 
-.latest-posts .more {
+.latest-posts .more, .latest-other .more {
     clear: both;
     text-align: right;
 }
