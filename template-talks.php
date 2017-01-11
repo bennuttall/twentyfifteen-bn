@@ -25,7 +25,8 @@ get_header(); ?>
 
                     <?php $args = array(
                         'child_of' => get_the_ID(),
-                        'sort_column' => 'menu_order',
+                        'sort_column' => 'post_date',
+                        'sort_order' => 'desc',
                     );
                     $posts = get_pages($args);
 
